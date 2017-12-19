@@ -11,6 +11,7 @@ RUN \
 RUN cp go-ethereum/build/bin/geth /usr/bin && chmod +x /usr/bin/geth && \
     rm -rf go-ethereum
 
+COPY ./genesis.json /build/genesis.json
 COPY ./entrypoint.sh /build/entrypoint.sh
 RUN chmod +x /build/entrypoint.sh
 
