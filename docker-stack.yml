@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  vet:
+    build: ./
+    image: vet/geth
+    volumes:
+      - "vet:/build/vet"
+      - "./.pwd:/build/.pwd"
+    restart: "on-failure:10"
+    ports:
+      - "30303:30303"
+
+  netapis:
+    build: ./netapis
+    image: vet/netapis
+    restart: "on-failure:10"
+    env_file: .env
+    depends_on:
+      - vet
+
+volumes:
+  vet:
