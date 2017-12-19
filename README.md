@@ -8,7 +8,7 @@
 Create `.pwd` file
 ```
 touch .pwd
-``
+```
 
 Edit `.pwd` file and input the password for your ethereum address if you want.
 
