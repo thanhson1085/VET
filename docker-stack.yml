@@ -3,7 +3,7 @@ version: "3"
 services:
   vet:
     build: ./
-    image: vet/geth
+    image: vethnet/geth
     volumes:
       - "vet:/build/vet"
       - "./.pwd:/build/.pwd"
@@ -13,7 +13,7 @@ services:
 
   netapis:
     build: ./netapis
-    image: vet/netapis
+    image: vethnet/netapis
     restart: "on-failure:10"
     env_file: .env
     depends_on:
