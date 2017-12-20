@@ -2,8 +2,14 @@
 ## Prerequisite
 - Docker
 - Docker Compose
+- Git
 
 ## Setup
+
+Clone this source code:
+```
+git clone https://github.com/thanhson1085/VET.git
+```
 
 Create `.pwd` file
 ```
