@@ -32,7 +32,7 @@ Edit `.pwd` file and input the password for your ethereum address if you want.
 
 Create `.env` file by using the sample - `.env.example` file.
 
-Contact me to know the value of `WS_SECRET` in `.env` file. (My FB: [https://www.facebook.com/thanhson1085](https://www.facebook.com/thanhson1085)
+Contact me to know the value of `WS_SECRET` in `.env` file. (My FB: [https://www.facebook.com/thanhson1085](https://www.facebook.com/thanhson1085))
 
 Finnaly, just run:
 ```
