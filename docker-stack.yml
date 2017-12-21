@@ -10,6 +10,7 @@ services:
     restart: "on-failure:10"
     ports:
       - "30303:30303"
+      - "8545:8545"
 
   netapis:
     build: ./netapis
