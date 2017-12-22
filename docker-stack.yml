@@ -7,6 +7,7 @@ services:
     volumes:
       - "vet:/build/vet"
       - "./.pwd:/build/.pwd"
+      - "/etc/localtime:/etc/localtime:ro"
     restart: "on-failure:10"
     ports:
       - "30303:30303"
@@ -16,6 +17,8 @@ services:
     build: ./netapis
     image: vethnet/netapis
     restart: "on-failure:10"
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
     env_file: .env
     depends_on:
       - vet
