@@ -1,5 +1,5 @@
 The purpose of this testnet is that we want to create a fast testnet for Vietnamese Blockchain Developers.
-The tesnet is using Ethereum Proof Of Authority (same as Rinkerby), but Block Time is just two seconds.
+The tesnet is using Ethereum Proof Of Authority (same as Rinkeby), but Block Time is just two seconds.
 
 ## Prerequisite
 - Docker
