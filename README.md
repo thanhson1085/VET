@@ -23,9 +23,9 @@ Clone this source code:
 git clone https://github.com/thanhson1085/VET.git
 ```
 
-Create `.pwd` file
+Enter `VET` directory, Create `.pwd` file
 ```
-touch .pwd
+cd VET && touch .pwd
 ```
 
 Edit `.pwd` file and input the password for your ethereum address if you want.
