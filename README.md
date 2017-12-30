@@ -58,7 +58,7 @@ If it's at a non-standard location, specify the URL with the DOCKER_HOST environ
 
 **NOTE:** For safety, do not run as `root`!
 
-## How to became a Validator?
+## How to become a Validator?
 There is not a official way for now. Just contact me via Facebook.
 
 ## How to get free Ethereum in this testnet?
