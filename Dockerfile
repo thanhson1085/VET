@@ -13,6 +13,7 @@ RUN cp go-ethereum/build/bin/geth /usr/bin && chmod +x /usr/bin/geth && \
 
 COPY ./genesis.json /build/genesis.json
 COPY ./entrypoint.sh /build/entrypoint.sh
+COPY ./.bootnodes /build/.bootnodes
 RUN chmod +x /build/entrypoint.sh
 
 EXPOSE 8545
