@@ -9,6 +9,9 @@ services:
       - "./.pwd:/build/.pwd"
       - "/etc/localtime:/etc/localtime:ro"
     restart: "on-failure:10"
+    healthcheck:
+      test: ["CMD", "bash", "/build/healthcheck.sh"]
+      interval: 2m
     ports:
       - "30303:30303"
       - "8545:8545"
