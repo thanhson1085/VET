@@ -8,7 +8,10 @@ services:
       - "vet:/build/vet"
       - "./.pwd:/build/.pwd"
       - "/etc/localtime:/etc/localtime:ro"
-    restart: "on-failure:10"
+    restart: "always"
+    healthcheck:
+      test: ["CMD", "bash", "/build/healthcheck.sh"]
+      interval: 2m
     ports:
       - "30303:30303"
       - "8545:8545"

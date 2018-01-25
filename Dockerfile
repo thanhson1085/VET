@@ -13,8 +13,10 @@ RUN cp go-ethereum/build/bin/geth /usr/bin && chmod +x /usr/bin/geth && \
 
 COPY ./genesis.json /build/genesis.json
 COPY ./entrypoint.sh /build/entrypoint.sh
+COPY ./healthcheck.sh /build/healthcheck.sh
 COPY ./.bootnodes /build/.bootnodes
 RUN chmod +x /build/entrypoint.sh
+RUN chmod +x /build/healthcheck.sh
 
 EXPOSE 8545
 EXPOSE 30303
