@@ -68,4 +68,3 @@ Join Facebook Group: Vietnam Blockchain Developers [https://www.facebook.com/gro
 
 Input your addresst to the form: [http://faucet.visc.network](http://faucet.visc.network)
 
-Note: We will develop a better way to get free ether later
