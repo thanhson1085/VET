@@ -4,6 +4,7 @@ services:
   vet:
     build: ./
     image: vethnet/geth
+    env_file: .env
     volumes:
       - "vet:/build/vet"
       - "./.pwd:/build/.pwd"
